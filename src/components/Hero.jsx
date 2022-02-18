@@ -7,17 +7,17 @@ const Hero = ({ slider }) => {
   const length = slider.length;
   const timeOut = useRef(null);
 
-  useEffect(() => {
-    const nextSlide = () => {
-      setCurrent((current) => (current === length - 1 ? 0 : current + 1));
-    };
-    timeOut.current = setTimeout(nextSlide, 3000);
-    return function () {
-      if (timeOut.current) {
-        clearTimeout(timeOut.current);
-      }
-    };
-  }, [current, length]);
+  // useEffect(() => {
+  //   const nextSlide = () => {
+  //     setCurrent((current) => (current === length - 1 ? 0 : current + 1));
+  //   };
+  //   timeOut.current = setTimeout(nextSlide, 3000);
+  //   return function () {
+  //     if (timeOut.current) {
+  //       clearTimeout(timeOut.current);
+  //     }
+  //   };
+  // }, [current, length]);
 
   const nextSlide = () => {
     if (timeOut.current) {
@@ -72,11 +72,11 @@ const Hero = ({ slider }) => {
         ))}
         <div className="sliderButton absolute bottom-14 flex z-10 right-14 space-x-3 ">
           <ArrowLeftIcon
-            className="w-12 h-12 rounded-full p-2 cursor-pointer border-2 select-none hover:bg-orange-600 hover:text-white transition hover:scale-105 duration-200 ease-out "
+            className="w-12 h-12 text-white rounded-full p-2 cursor-pointer border-2 select-none hover:bg-orange-600 hover:text-white hover:border-orange-600 transition hover:scale-105 duration-200 ease-out "
             onClick={prevSlide}
           />
           <ArrowRightIcon
-            className="w-12 h-12 rounded-full p-2  cursor-pointer border-2 select-none hover:bg-orange-600 hover:text-white transition hover:scale-105 duration-200 ease-out"
+            className="w-12 h-12 text-white rounded-full p-2  cursor-pointer border-2 select-none hover:bg-orange-600 hover:text-white hover:border-orange-600 transition hover:scale-105 duration-200 ease-out"
             onClick={nextSlide}
           />
         </div>

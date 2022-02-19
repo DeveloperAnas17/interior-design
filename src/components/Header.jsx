@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="h-20 text-white max-w-[1400px] fixed z-30 mx-auto top-0 right-0 left-0  flex items-center justify-between px-16 md:px-10 ">
+    <div className="h-20 text-white fixed z-30 mx-auto top-0 right-0 left-0  flex items-center justify-between px-16 md:px-10 ">
       <div className="logo">
         <h3 className="italic">Logo</h3>
       </div>

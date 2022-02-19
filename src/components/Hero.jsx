@@ -39,7 +39,7 @@ const Hero = ({ slider }) => {
   }
 
   return (
-    <div className="h-screen max-w-[1400px] mx-auto">
+    <div className="h-screen ">
       <div className="w-full h-full flex items-center justify-center overflow-hidden relative">
         {SliderData.map((slider, index) => (
           // return (

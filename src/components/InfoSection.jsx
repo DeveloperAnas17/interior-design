@@ -10,12 +10,11 @@ const InfoSection = ({
   delay,
 }) => {
   return (
-    <section className="max-w-[1400px] mx-auto w-full h-full p-5">
+    <section className="max-w-[1400px] mx-auto w-full h-full py-5">
       <div className="grid p-6 grid-cols-1 md:grid-cols-2 ">
         <div
-          className={`left flex flex-col justify-center items-start py-2 px-4 ${({
-            reverse,
-          }) => (reverse ? "2" : "1")}`}
+          className="left flex flex-col justify-center items-start py-2 md:px-4 
+            "
         >
           <h1 className=" mb-2 text-2xl font-semibold">{heading}</h1>
           <p>{paragraph} </p>
@@ -23,14 +22,9 @@ const InfoSection = ({
             {buttonLabel}
           </button>
         </div>
-        <div
-          className={`right mt-8 md:mt-0  py-2 md:px-4 flex justify-center items-center ${({
-            reverse,
-          }) => (reverse ? "1" : "2")}`}
-          reverse={reverse}
-        >
+        <div className="right mt-8 md:mt-0  py-2 md:px-4 flex justify-center items-center">
           <img
-            className=" w-[90%] h-[90%] md:w-full md:h-full object-cover"
+            className="  md:w-full md:h-full object-cover"
             src={Image}
             alt="home"
           />

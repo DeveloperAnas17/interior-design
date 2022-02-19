@@ -10,6 +10,9 @@ import Aos from "aos";
 import LatestWork from "./LatestWork";
 import { LatestworkData } from "../data/LatestworkData";
 import WhyUs from "./WhyUs";
+import Testimonial from "./Testimonial";
+import Hero3 from "../assets/hero3.jpg";
+import { TestmonialData } from "../data/TestimonialData";
 
 const Body = () => {
   useEffect(() => {
@@ -17,7 +20,7 @@ const Body = () => {
   }, []);
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero slider={SliderData} />
       <div
         data-aos="fade-up"
@@ -30,6 +33,14 @@ const Body = () => {
         <LatestWork latestData={LatestworkData} />
       </div>
       <WhyUs />
+      <section className="mt-4 md:mt-8 relative w-full h-40">
+        <img src={Hero3} className="w-full h-full object-cover" alt="" />
+        <p className="absolute  text-center flex items-center justify-center w-full top-10 bottom-10 left-auto right-auto text-lg font-bold text-white ">
+          Being the largest in-home decorationg service in newyork city, you can
+          work with us from anywhere!
+        </p>
+      </section>
+      <Testimonial testimonials={TestmonialData} />
     </div>
   );
 };

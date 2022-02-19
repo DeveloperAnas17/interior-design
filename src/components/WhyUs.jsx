@@ -3,16 +3,16 @@ import FigmaDesign from "../assets/figma-design.png";
 
 const WhyUs = () => {
   return (
-    <section className="max-w-[1400px] mx-auto w-full h-full py-10 px-14">
-      <div className="flex flex-col-reverse md:space-x-10 md:flex-row  ">
-        <div className="flex-1 border">
+    <section className="max-w-[1400px] mx-auto w-full h-full py-10 px-4">
+      <div className="flex flex-col-reverse lg:space-x-10 lg:flex-row  ">
+        <div className="mt-8 lg:mt-0 flex-1 border">
           <img
             src={FigmaDesign}
             alt=""
-            className="w-[90%] h-[90%] md:w-full md:h-full object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex-1 md:mt-6 flex flex-col items-start ">
+        <div className="flex-1 lg:mt-6 flex flex-col items-start ">
           <h1 className="text-4xl font-semibold">Why Choose Us</h1>
           <p className="text-gray-600 font-medium mt-3">
             Besides great interior design, there are lots of reasons to choose

@@ -3,14 +3,12 @@ import { LatestworkData } from "../data/LatestworkData";
 import { Link } from "react-router-dom";
 
 const LatestWork = ({ latestData }) => {
-  // console.log(LatestworkData);
-  console.log(latestData);
   return (
-    <div className="max-w-[1400px] mx-auto px-14">
+    <div className="max-w-[1400px] mx-auto px-4 ">
       <div className="flex items-center justify-between w-full">
         <h1 className="font-semibold text-2xl">Latest Work</h1>
         <Link to={"/our-work"}>
-          <button className="h-12 w-32 font-semibold flex items-center justify-center bg-orange-400 text-white border-2 border-orange-400 hover:bg-white hover:text-orange-400 transition duration-150 ease-in-out">
+          <button className="h-10 w-28 text-xs font-semibold flex items-center justify-center bg-orange-400 text-white border-2 border-orange-400 hover:bg-white hover:text-orange-400 transition duration-150 ease-in-out">
             See All Work
           </button>
         </Link>
@@ -21,7 +19,7 @@ const LatestWork = ({ latestData }) => {
             key={index}
             className=" cursor-pointer hover:scale-105 transition transform duration-300 ease-out "
           >
-            <div className=" h-72 w-72 relative">
+            <div className=" h-60 w-60 md:h-72 md:w-72 relative">
               <img
                 src={workData.image}
                 alt=""
